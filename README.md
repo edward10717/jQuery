@@ -1,20 +1,26 @@
 <html>
-  <script>
-    $("#switchbox").change(function(){
-      if(this.checked)
-      {
-        $("body").parent().css("background-color", "blue");
-      }
-      else
-      {
-        $("body").parent().css("background-color", "gray");
-      }
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("button").addClass("animated bounce");
+    $("button").click(function(){
+      var color = this.value;
+        $("body").css("background-color",color);
     });
+  });
   </script>
-  <div>
-    <h1>Change the color of background</h1>
-    <div class="switchbox">
-      <button type="checkbox" class="switchbox" id="switchbox">Change</button>
+  <div class="container-fluid">
+    <h3 class="text-primary text-center"></h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="well" id="left-well">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>Change the color of background</h4>
+        <div class="well" id="right-well">
+        <button style="background-color:white" value="white" id="target1" class="animated bounce">recover</button>
+        <button style="background-color:#CCDDF" value="#CCDDFF" id="target2" class="animated bounce">change</button>
+      </div>
     </div>
   </div>
 </html>
