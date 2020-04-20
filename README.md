@@ -46,7 +46,7 @@ Example1
 </div>
 
 ```
-<!DOCTYPE html>
+
 <html>
   <script>
     $(document).ready(function() {
@@ -60,7 +60,7 @@ Example1
       $("#left-well").children().css("color", "green");
       $(".target:nth-child(2)").addClass("animated bounce");
       $(".target:even").addClass("animated shake");
-
+      $("Change").parent().css("background-color", "blue");
     });
   </script>
 
@@ -83,6 +83,12 @@ Example1
           <button class="btn btn-default target" id="target4">#target4</button>
           <button class="btn btn-default target" id="target5">#target5</button>
           <button class="btn btn-default target" id="target6">#target6</button>
+        </div>
+      </div>
+      <div>
+        <h4>Change the color of background</h4>
+        <div>
+          <button>Change</button>
         </div>
       </div>
     </div>
