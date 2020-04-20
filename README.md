@@ -1,29 +1,3 @@
-<html>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $("button").addClass("animated bounce");
-    $("button").click(function(){
-      var color = this.value;
-        $("body").css("background-color",color);
-    });
-  });
-  </script>
-  <div class="container-fluid">
-    <h3 class="text-primary text-center"></h3>
-    <div class="row">
-      <div class="col-xs-6">
-        <div class="well" id="left-well">
-        </div>
-      </div>
-      <div class="col-xs-6">
-        <h4>Change the color of background</h4>
-        <div class="well" id="right-well">
-        <button style="background-color:white" value="white" id="target1" class="animated bounce">recover</button>
-        <button style="background-color:#CCDDF" value="#CCDDFF" id="target2" class="animated bounce">change</button>
-      </div>
-    </div>
-  </div>
-</html>
 ### The Practice of jQuery
 
 jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having 3 to 4 times more usage than any other JavaScript library.
@@ -74,6 +48,30 @@ Example1
 ```
 
 <html>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("button").addClass("animated bounce");
+    $("button").click(function(){
+      var color = this.value;
+        $("body").css("background-color",color);
+    });
+  });
+  </script>
+  <div class="container-fluid">
+    <h3 class="text-primary text-center"></h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="well" id="left-well">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>Change the color of background</h4>
+        <div class="well" id="right-well">
+        <button style="background-color:white" value="white" id="target1" class="animated bounce">recover</button>
+        <button style="background-color:#CCDDF" value="#CCDDFF" id="target2" class="animated bounce">change</button>
+      </div>
+    </div>
+  </div>
   <script>
     $(document).ready(function() {
       $("#target1").css("color", "red");
