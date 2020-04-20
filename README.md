@@ -53,7 +53,7 @@ Example1
     $("button").addClass("animated bounce");
     $("button").click(function(){
       var color = this.value;
-        $("body").css("background-color",color);
+        $("body").css("background-color", color);
     });
   });
   </script>
@@ -67,8 +67,8 @@ Example1
       <div class="col-xs-6">
         <h4>Change the color of background</h4>
         <div class="well" id="right-well">
-        <button style="background-color:white" value="white" id="target1" class="animated bounce">recover</button>
-        <button style="background-color:#CCDDF" value="#CCDDFF" id="target2" class="animated bounce">change</button>
+        <button style="background-color:black" value="black" id="t1">recover</button>
+        <button style="background-color:white" value="white" id="t2">change</button>
       </div>
     </div>
   </div>
