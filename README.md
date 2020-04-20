@@ -12,7 +12,7 @@
     });
   </script>
   <div>
-    <h4>Change the color of background</h4>
+    <h1>Change the color of background</h1>
     <div class="switchbox">
       <button type="checkbox" class="switchbox" id="switchbox">Change</button>
     </div>
