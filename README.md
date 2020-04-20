@@ -67,8 +67,7 @@ Example1
       <div class="col-xs-6">
         <h4>Change the color of background</h4>
         <div class="well" id="right-well">
-        <button style="background-color:black" value="black" id="t1">recover</button>
-        <button style="background-color:white" value="white" id="t2">change</button>
+        <button style="background-color:white" value="white" id="t1">change</button>
       </div>
     </div>
   </div>
@@ -96,7 +95,7 @@ Example1
         <h4>#left-well</h4>
         <div class="well" id="left-well">
           <button class="btn btn-default target" id="target1">#target1</button>
-          <button class="btn btn-default target" id="target2">#target2</button>
+          <button class="btn btn-default target" id="target2">recover</button>
           <button class="btn btn-default target" id="target3">#target3</button>
         </div>
       </div>
