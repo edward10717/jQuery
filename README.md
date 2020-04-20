@@ -1,3 +1,23 @@
+<html>
+  <script>
+    $("#switchbox").change(function(){
+      if(this.checked)
+      {
+        $("body").parent().css("background-color", "blue");
+      }
+      else
+      {
+        $("body").parent().css("background-color", "gray");
+      }
+    });
+  </script>
+  <div>
+    <h4>Change the color of background</h4>
+    <div class="switchbox">
+      <button type="checkbox" class="switchbox" id="switchbox">Change</button>
+    </div>
+  </div>
+</html>
 ### The Practice of jQuery
 
 jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of May 2019, jQuery is used by 73% of the 10 million most popular websites. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having 3 to 4 times more usage than any other JavaScript library.
@@ -60,7 +80,6 @@ Example1
       $("#left-well").children().css("color", "green");
       $(".target:nth-child(2)").addClass("animated bounce");
       $(".target:even").addClass("animated shake");
-      $("Change").parent().css("background-color", "blue");
     });
   </script>
 
@@ -83,12 +102,6 @@ Example1
           <button class="btn btn-default target" id="target4">#target4</button>
           <button class="btn btn-default target" id="target5">#target5</button>
           <button class="btn btn-default target" id="target6">#target6</button>
-        </div>
-      </div>
-      <div>
-        <h4>Change the color of background</h4>
-        <div>
-          <button>Change</button>
         </div>
       </div>
     </div>
